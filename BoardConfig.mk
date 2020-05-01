@@ -1,4 +1,4 @@
-DEVICE_PATH := device/Teracube/Teracube
+DEVICE_PATH := device/Teracube/Teracube_One
 
 ALLOW_MISSING_DEPENDENCIES := true
 

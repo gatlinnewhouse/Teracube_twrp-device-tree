@@ -4,10 +4,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Teracube
-PRODUCT_NAME := omni_Teracube
+PRODUCT_DEVICE := Teracube_One
+PRODUCT_NAME := omni_Teracube_One
 PRODUCT_BRAND := Teracube
-PRODUCT_MODEL := Teracube
+PRODUCT_MODEL := Teracube_One
 PRODUCT_MANUFACTURER := Teracube
 
 # ADB Fix

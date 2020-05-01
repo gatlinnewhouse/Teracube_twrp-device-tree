@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_Teracube.mk
+    $(LOCAL_DIR)/omni_Teracube_One.mk
