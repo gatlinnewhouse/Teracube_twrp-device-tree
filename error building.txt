@@ -1,0 +1,89 @@
+gatnewhou@DESKTOP-MRIRG97:/mnt/m/Documents/GitHub/twrp$ lunch omni_Teracube_One-eng 
+WARNING: device/teracube/Teracube_One/omni.dependencies file not found
+
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Teracube_One
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-19041-Microsoft-x86_64-Ubuntu-18.04.4-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/mnt/m/Documents/GitHub/twrp/out
+============================================
+gatnewhou@DESKTOP-MRIRG97:/mnt/m/Documents/GitHub/twrp$ mka recoveryimage
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=16.1.0
+TARGET_PRODUCT=omni_Teracube_One
+TARGET_BUILD_VARIANT=eng
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv7-a-neon
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-4.4.0-19041-Microsoft-x86_64-Ubuntu-18.04.4-LTS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=PQ3B.190801.002
+OUT_DIR=/mnt/m/Documents/GitHub/twrp/out
+============================================
+12:34:59 Missing ninja log: stat /mnt/m/Documents/GitHub/twrp/out/.ninja_log: no such file or directory
+[1/1] /mnt/m/Documents/GitHub/twrp/out/soong/.minibootstrap/minibp /mnt/m/Documents/GitHub/twrp/out/soong/.bootstrap/build.ninja
+[38/39] glob prebuilts/ndk/stl.bp
+[76/76] /mnt/m/Documents/GitHub/twrp/out/soong/.bootstrap/bin/soong_build /mnt/m/Documents/GitHub/twrp/out/soong/build.ninja
+/mnt/m/Documents/GitHub/twrp/out/build-omni_Teracube_One-cleanspec.ninja is missing, regenerating...
+/mnt/m/Documents/GitHub/twrp/out/build-omni_Teracube_One.ninja is missing, regenerating...
+[81/147] including frameworks/base/Android.mk ...
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory    
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory       
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory       
+find: ‘../opt/telephony/src/java/android/telephony’: No such file or directory
+find: ‘../opt/telephony/src/java/android/telephony/gsm’: No such file or directory
+find: ‘../opt/net/voip/src/java/android/net/rtp’: No such file or directory       
+find: ‘../opt/net/voip/src/java/android/net/sip’: No such file or directory       
+[127/147] including system/core/Android.mk ...
+sed: can't read development/sdk/plat_tools_source.prop_template: No such file or directory
+sed: can't read development/sdk/plat_tools_source.prop_template: No such file or directory
+[138/147] including system/sepolicy/Android.mk ...
+system/sepolicy/Android.mk:79: warning: BOARD_SEPOLICY_VERS not specified, assuming current platform version
+[147/147] including vendor/omni/Android.mk ...
+vendor/omni/build/tasks/kernel.mk:167: warning: ***************************************************************
+vendor/omni/build/tasks/kernel.mk:168: warning: * Using prebuilt kernel binary instead of source              *
+vendor/omni/build/tasks/kernel.mk:169: warning: * THIS IS DEPRECATED, AND WILL BE DISCONTINUED                *
+vendor/omni/build/tasks/kernel.mk:170: warning: * Please configure your device to download the kernel         *
+vendor/omni/build/tasks/kernel.mk:171: warning: * source repository to kernel/teracube/Teracube_One
+vendor/omni/build/tasks/kernel.mk:172: warning: * for more information                                        *
+vendor/omni/build/tasks/kernel.mk:173: warning: ***************************************************************
+build/make/core/base_rules.mk:412: warning: overriding commands for target `/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/root/res/images/charger/battery_fail.png'
+build/make/core/base_rules.mk:412: warning: ignoring old commands for target `/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/root/res/images/charger/battery_fail.png'
+build/make/core/base_rules.mk:412: warning: overriding commands for target `/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/root/res/images/charger/battery_scale.png'
+build/make/core/base_rules.mk:412: warning: ignoring old commands for target `/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/root/res/images/charger/battery_scale.png'
+build/make/core/Makefile:28: warning: overriding commands for target `/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/system/etc/mkshrc'
+build/make/core/base_rules.mk:412: warning: ignoring old commands for target `/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/system/etc/mkshrc'
+[ 99% 689/690] glob hardware/interfaces/camera/metadata/3.2/src
+ninja: error: '/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/obj/STATIC_LIBRARIES/bootctrl._intermediates/export_includes', needed by '/mnt/m/Documents/GitHub/twrp/out/target/product/Teracube_One/obj/EXECUTABLES/update_engine_sideload_intermediates/import_includes', missing and no known rule to make it
+12:37:52 ninja failed with: exit status 1
+
+#### failed to build some targets (02:59 (mm:ss)) ####
