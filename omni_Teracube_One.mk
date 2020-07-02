@@ -45,25 +45,25 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # Boot control HAL
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+#PRODUCT_PACKAGES += \
+#    android.hardware.boot@1.0-impl \
+#    android.hardware.boot@1.0-service
 
-PRODUCT_PACKAGES += \
-    bootctrl.$(TARGET_BOARD_PLATFORM)
+#PRODUCT_PACKAGES += \
+#    bootctrl.$(TARGET_BOARD_PLATFORM)
     
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.$(TARGET_BOARD_PLATFORM) \
-    libgptutils \
-    libz \
-    libcutils
+#PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+#    bootctrl.$(TARGET_BOARD_PLATFORM) \
+#    libgptutils \
+#    libz \
+#    libcutils
     
-PRODUCT_PACKAGES += \
-    otapreopt_script \
-    cppreopts.sh \
-    update_engine \
-    update_verifier \
-    update_engine_sideload
+#PRODUCT_PACKAGES += \
+#    otapreopt_script \
+#    cppreopts.sh \
+#    update_engine \
+#    update_verifier \
+#    update_engine_sideload
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := Teracube_One
