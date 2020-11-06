@@ -6,8 +6,6 @@ Forked from [mrmazakblu's tree](https://github.com/mrmazakblu/Teracube_minimum_t
 
 Built using [TWRP-device-tree-generator](https://github.com/SebaUbuntu/TWRP-device-tree-generator) with physical Teracube One for adb access during generation script
 
----
-
 ## Build instructions
 
 1. Follow [these instructions](https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni/tree/twrp-9.0#getting-started) to initialize a twrp directory for building TWRP. I linked the Android 9.0 branch since this is the device tree for the Android 9.0 build of TWRP.
