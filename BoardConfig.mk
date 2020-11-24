@@ -33,6 +33,8 @@ TARGET_2ND_ARCH_VARIANT := armv7-a-neon
 TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
+#ENABLE_CPUSETS := true
+#ENABLE_SCHEDBOOST := true
 TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
@@ -47,9 +49,9 @@ BOARD_SECOND_OFFSET := 0x00e88000
 BOARD_KERNEL_TAGS_OFFSET := 0x13f88000
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMG_HEADER_VERSION := 1
-TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage-dtb
-BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
-BOARD_INCLUDE_RECOVERY_DTBO := true
+#TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/zImage-dtb
+#BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+#BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
@@ -103,13 +105,17 @@ TW_INCLUDE_NTFS_3G := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
-#TW_CRYPTO_USE_SYSTEM_VOLD := true
 TWRP_INCLUDE_LOGCAT := true
+#TW_EXCLUDE_TWRPAPP := true
+#TW_EXCLUDE_SUPERSU := true
 
 # Crypto
 TW_INCLUDE_CRYPTO := true
 #TW_CRYPTO_USE_SYSTEM_VOLD := true
+#TW_INCLUDE_CRYPTO_FBE := true
 TW_CRYPTO_FS_TYPE := "ext4"
 TW_CRYPTO_REAL_BLKDEV := "/dev/block/platform/bootdevice/by-name/userdata"
 TW_CRYPTO_MNT_POINT := "/data"
-TW_CRYPTO_FS_OPTIONS := "nosuid,nodev,noatime,discard,noauto_da_alloc,data=ordered"
+#TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
+#TARGET_HW_DISK_ENCRYPTION := false
+TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,noauto_da_alloc,errors=panic wait,check,formattable,quota,resize,reservedsize=128m,forcefdeorfbe=/dev/block/platform/bootdevice/by-name/metadata"
